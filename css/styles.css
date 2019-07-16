@@ -45,7 +45,7 @@ p {
     margin-top: 0;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
 
     /* * {
         border: 1px black solid;
@@ -85,6 +85,6 @@ p {
     }
 
     p {
-        width: 50%;
+        width: 40%;
     }
 }
