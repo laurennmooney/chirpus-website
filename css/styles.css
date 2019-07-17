@@ -29,7 +29,7 @@ button {
     color: #FFF;
     background-color: #000;
     border: none;
-    height: 40px;
+    height: 35px;
     border-radius: 20px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -45,21 +45,18 @@ p {
 
 @media (min-width: 768px) {
 
-    /* * {
-        border: 1px black solid;
-    } */
-
     /* header and nav bar */
 
     header, nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
     .title {
-        padding: 0;
+        padding: 5px 0;
         flex-grow: 2;
         width: 40%;
     }
@@ -68,12 +65,14 @@ p {
         display: flex;
         justify-content: space-evenly;
         width: auto;
-        padding: 0 15px;
+        padding: 0 5px;
+        margin: 0;
     }
 
     .hire-us {
         margin-left: 10px;
         width: 100px;
+        align-self: center;
     }
 
     /* main section with description and circles */
@@ -81,7 +80,7 @@ p {
     main {
         display: flex;
         flex-direction: row;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .pink {
@@ -89,10 +88,9 @@ p {
         height: 200px;
         width: 200px;
         position: absolute;
-        top: 138px;
+        top: 178px;
         right: 90px;
         border-radius: 100%;
-
     }
 
     .purple {
@@ -101,7 +99,7 @@ p {
         width: 120px;
         border-radius: 100%;
         position: absolute;
-        top: 155px;
+        top: 195px;
         right: 20px;
     }
 
@@ -112,7 +110,7 @@ p {
         border-radius: 100%;
         position: absolute;
         right: 20px;
-        top: 250px;
+        top: 280px;
     }
     
     .description {
