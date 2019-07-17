@@ -1,6 +1,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f9fafc;
+    margin: 20px;
+    height: 100vh;
 }
 
 nav a {
@@ -8,7 +10,7 @@ nav a {
     flex-direction: column;
     text-decoration: none;
     color: #69696a;
-    margin: 10px;
+    margin-bottom: 10px;
     width: 20%;
 }
 
@@ -32,10 +34,6 @@ button {
     font-family: 'Open Sans', sans-serif;
 }
 
-main {
-    margin-left: 15px;
-}
-
 p {
     border-left: 2px #69696a solid;
     padding: 0 15px;
@@ -51,9 +49,11 @@ p {
         border: 1px black solid;
     } */
 
+    /* header and nav bar */
+
     header, nav {
         display: flex;
-        flex-direction: row wrap;
+        flex-direction: row;
         justify-content: space-between;
         width: 100%;
     }
@@ -68,23 +68,67 @@ p {
         display: flex;
         justify-content: space-evenly;
         width: auto;
-
-    }
-
-    button {
-        width: 170px;
+        padding: 0 15px;
     }
 
     .hire-us {
         margin-left: 10px;
+        width: 100px;
     }
+
+    /* main section with description and circles */
 
     main {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        margin-top: 50px;
     }
 
-    p {
-        width: 40%;
+    .pink {
+        background: rgba(247, 136, 167, 0.6);
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 138px;
+        right: 90px;
+        border-radius: 100%;
+
     }
+
+    .purple {
+        background: rgba(207, 130, 213, 0.6);
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+        position: absolute;
+        top: 155px;
+        right: 20px;
+    }
+
+    .orange {
+        background: rgba(247, 193, 162, 0.7);
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        position: absolute;
+        right: 20px;
+        top: 250px;
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+    }
+
+    /* scroll down button */
+
+    .scroll {
+        width: 120px;
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%,-50%);
+    }
+
 }
